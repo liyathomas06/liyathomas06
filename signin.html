@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <link href="signin.css"type="text/css"rel="stylesheet">
+    
+
+<h2> To Signup please click the sign up button </h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill  your details in the form to create a new  account.</p>
+
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').login.display='none'"class="close" title="Close Modal">&times;</span>
+        <img src="healthy.jpg"><!--adding image-->
+      </div>
+  
+      <hr>
+      <label for="ema"><b>Email</b></label><!--adding email label-->
+      <input type="text" placeholder=" Please Enter Your Email Id" name="ema" required><!--adding input please enter your email id-->
+
+      <label for="p"><b>Password</b></label><!--adding password label-->
+      <input type="password" placeholder="Please Enter a  Password" name="p" required><!--adding input please enter a password-->
+
+      <label for="ps"><b>Conform Password</b></label><!--adding conform password-->
+      <input type="password" placeholder="Please type once your Password to conform" name="ps" required><!--adding input please type once your password to conform-->
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel Go Back</button>
+        <button type="submit" class="signupbtn">Sigining Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+		
+<script>
+
+  //js
+// Get the modal
+var m = document.getElementById('id01');
+
+// When the user clicks anywhere outside ,  it closes
+window.onclick = function(e) {
+  if (e.target == m) {
+    m.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

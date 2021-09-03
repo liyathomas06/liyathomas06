@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="login.css"type="text/css"rel="stylesheet">
+<script type="text/javascript" src="login.js"></script>
+</head>
+<body>
+
+<h2>Welcome  Healthy Food user you can  Login here by pressing login button</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+<!----Adding border to image-->
+<style>
+  img {
+    border: 4px solid white;
+  }
+</style>
+
+<div class="imgcontainer">
+<span onclick="document.getElementById('id01').login.display='none'"class="close" title="Close Modal">&times;</span>
+<img src="healthy.jpg"><!--adding iamge-->
+</div>
+<div class="rectangle">
+<label for="u"><b>Username</b></label><!--adding username label-->
+<input type="text" placeholder="Please enter username" ><!--adding input please enter username-->
+<label for="text"><b> Password</b></label><!--adding pasword label-->
+<input type="text" placeholder=" Please Enter Password" ><!--adding input please enter password-->
+</div>
+<div class="container" style="background-color:#f1f1f1">
+<button type="button" onclick="document.getElementById('id01').style.display='none'" class="Loginbtn">Login</button><!--adding login button-->
+<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button><!--adding cancel button-->
+<span class="psw"> <a href="#">forgot password?</a></span>
+ </div>
+</form>
+</div>
+<script>
+   // Get the modal
+var modal = document.getElementById('id01');
+  
+  // When the user clicks anywhere outside it  closes
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+ </script>
+
+</body>
+</html>
